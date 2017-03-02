@@ -338,7 +338,7 @@
 %  \addcontentsline{toc}{chapter}{#1}% does not work, the bookmark is placed at the same level as sections (placed themselves at part level to be visible, as hyperref does not allow sections without parents...)
 
 % usage: \cvline{margintext}{linetext}
-\newcommand*{\cvline}[3][.25em]{%
+\newcommand{\cvline}[3][.25em]{%
   \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
  	  \raggedleft\hintfont{#2} &{#3}%
   \end{tabular}\\[#1]}
@@ -362,7 +362,7 @@
     {#1~\begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#3\end{minipage}}}}
 
 % usage: \cventry{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
-\newcommand*{\cventry}[6]{%
+\newcommand{\cventry}[6]{%
   \cvline{#1}{%
     {\bfseries#2}%
     \ifthenelse{\equal{#3}{}}{}{, {\slshape#3}}%

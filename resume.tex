@@ -1,0 +1,224 @@
+\documentclass[12pt,a4paper,oneside,final]{moderncv}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage{makeidx}
+\usepackage{calc}
+\usepackage[russian,english]{babel}
+\usepackage[scale=0.90]{geometry}
+\usepackage{changepage}
+
+\renewcommand{\sfdefault}{cmr}
+
+\setlength{\hintscolumnwidth}{7em}
+
+\AtBeginDocument{\setlength{\maketitlenamewidth}{7cm}}
+\AtBeginDocument{\recomputelengths}
+
+\firstname{Max}
+\familyname{Riveiro}
+\title{\large Software Developer}
+\mobile{+7 903 XXX XX XX (RU)}
+\email{kavu13@gmail.com}
+\photo[64pt]{photo}
+
+\begin{document}
+\maketitle
+\section{Profiles}
+  \cvline{GitHub}{\underline{\href{https://github.com/kavu}{\itshape https://github.com/kavu}}}%
+  \cvline{StackOverflow}{\underline{\href{http://stackoverflow.com/story/kavu}{\itshape http://stackoverflow.com/story/kavu}}}%
+  \cvline{LinkedIn}{\underline{\href{https://linkedin.com/in/hornedkavu}{\itshape https://linkedin.com/in/hornedkavu}}}%
+  \cvline{Twitter}{\underline{\href{https://twitter.com/hornedkavu}{\itshape https://twitter.com/hornedkavu}}}%
+
+\section{Personal statement}
+\cvline{}{\parindent=0.7cm
+    I am passionate about gaining new knowledge. I love to learn. As a programmer, I am passionate about bleeding-edge technologies, learning them and solving hard tasks with them.
+
+    Apart from my desire to learn, I am eager to help people, to teach them, share my experience and provide my opinion, if needed. During my university years, I assisted my professor in conducting practical seminars. I was willing to stay as a teacher after graduating from the university, but due to budget cuts, our department could not offer me any position at that moment.
+
+    So, now I am looking for a job where I can learn from people that are smarter than me, try new technologies and languages with them, build new great things together and share my experience with people afterward.
+}
+
+\section{Skills \& Tools}
+\cvcomputer
+  {\textbf{Backend}}{Ruby, Go, JavaScript, Python, shell-scripting}
+  {\textbf{Frontend}}{JavaScript~(ES6), HTML~/~Slim, CSS~/~PostCSS, WebPack, React}
+\cvcomputer
+  {\textbf{Databases}}{PostgreSQL, Redis, SQLite, Elasticsearch, Neo4j, Cassandra}
+  {\textbf{Version Conrtroll}}{git, SVN, Mercurial}
+\cvcomputer
+  {\textbf{Web Frameworks and Libraries}}{Ruby~on~Rails, Sinatra, Go~net/http, Gorilla~Toolkit, Express.js}
+  {\textbf{iOS}}{Swift, SQLite, Xcode, Fastlane}
+\cvcomputer
+  {\textbf{DevOps}}{Ansible, Docker, Terraform, Drone, AWS, Linux~(Ubuntu,~Debian)}
+  {\textbf{Editors and IDE}}{Atom, Visual~Studio~Code, Vim, IDEA, PyCharm}
+\cvcomputer
+  {\textbf{Methodologies}}{TDD~/~BDD, pair programming, CI~/~CD, Lean, Agile methodologies}
+  {\textbf{Project management}}{Asana, Trello, GitHub, Jira, Trello, Redmine, Target Process}
+
+\section{Education}
+\cventry{2005--2011
+}{Computer Scientist and Economist}{Moscow~Aviation~Institute (National~Research~University) (MAI~(NRU)), \underline{\href{http://mai.ru}{\itshape mai.ru}}}{Russia,~Moscow}{}{
+\cvline{Speciality}{Applied Informatics in Economics}
+\cvline{Average grade}{4.34~out~of~5.0 \textit{(higher is better)}}
+\cvline{ECTS Points}{259.5}}
+
+\section{Experience}
+\cventry
+{01.2015--12.2016}
+{Head of Development}
+{
+  PlanetPass (travel startup, tours, excursions and activities)
+}
+{Russia,~Moscow}
+{}
+{
+  \begin{itemize}
+    \item \underline{\href{https://planetpass.com}{\itshape PlanetPass web site}}
+    \item \underline{\href{https://vimeo.com/176452074}{\itshape Promo video}}
+    \item \underline{\href{https://itunes.apple.com/us/app/planetpass-city-walks-with-guides/id1087995218}{\itshape iOS App}}
+    \item \underline{\href{https://play.google.com/store/apps/details?id=com.excursiopedia.planetpass}{\itshape Android App}}
+    \item \underline{\href{https://itunes.apple.com/us/app/tool-for-guides/id1129160306}{\itshape iOS App for Guides}}
+    \item \underline{\href{https://play.google.com/store/apps/details?id=com.excursiopedia.guide}{\itshape Android App for Guides}}
+  \end{itemize}
+  \smallskip
+  {\parindent=0.7cm
+    I joined Excursiopedia (which later pivoted to PlanetPass) as a leader of Web Development Team. The team consisted of 6 full-stack developers, including myself. After nine months project pivoted and became PlanetPass. I was promoted to Head of Development, leader of the Development Department and all company IT.
+
+    PlanetPass idea was a creation of travel mobile app for instanionous booking of tours and activties.
+
+    I formed mostly new team, and at maximum, we had 11 people~---~2 iOS developers, 2 Android developers, 2 DevOps and 5 server-side / web developers.
+
+    In June 2016 we successfully launched our first two applications, later in July, we released two additional.
+
+    Later that year we began to develop a web version of the clients' app.
+  }
+}
+
+
+\cventry
+{01.2014--11.2014}
+{Backend Developer}
+{Dream Industries~(technology group developing new media, culture~and learning projects)}
+{Russia,~Moscow}
+{}
+{
+  \begin{itemize}
+    \item \underline{\href{http://dreamindustries.co/}{\itshape Dream Industries}}
+    \item \underline{\href{http://bookmate.com/}{\itshape Bookmate}}
+    \item \underline{\href{http://publisher.bookmate.com/}{\itshape Bookmate Publisher}}
+  \end{itemize}
+  \smallskip
+  I was a backend developer of Bookmate Publisher~---~publishing~and self-publishing platform atop~of Bookmate, e-books reading service. My~primary responsibility was developing clients' books management panels along with our internal content management, legal and accounting systems. I~was also solving ongoing reporting and books database tasks requested by content and product teams. I designed new architecture which should was supposed to replace existing MongoDB and file storage with Cassandra. I created small, intelligent short-link service in Go for marketing team, part of it was \underline{\href{https://github.com/kavu/cappa}{\itshape open sourced}}.
+}
+
+
+\cventry
+{11.2011--12.2013}
+{Lead Developer / Head of Development}
+{CookWizMe~(startup, culinary social mobile application for iOS~and Android~platforms)}
+{Russia,~Moscow}{}
+{
+  \begin{itemize}
+    \item \underline{\href{https://cookwiz.me/}{\itshape CookWiz.Me}}
+    \item \underline{\href{https://play.google.com/store/apps/details?id=com.cookwizme}{\itshape CookWizMe for Android}}
+    \item \underline{\href{https://itunes.apple.com/app/id605764643}{\itshape CookWizMe for iOS}}
+  \end{itemize}
+  I led a development team of four people — me, as a backend Ruby developer, frontend developer, Android developer, and iOS developer. We developed for a successful mobile application, with a robust API backend and full-featured web-site.
+}
+
+
+\cventry
+{02.2011--11.2011}
+{Lead Developer}
+{
+  Production company of Andrei Konchalovsky, project <<Edim~Doma!>>, \underline{\href{http://pc.konchalovsky.ru}{\itshape pc.konchalovsky.ru}}
+}
+{Russia,~Moscow}
+{}
+{
+  I was responsible for the development and support of the themed social cooking portal \underline{\href{http://www.edimdoma.ru}{\itshape EdimDoma.Ru}}. Later, I sucessfuly formed a small development team. We developed an API for an external iOS app consumer, created rSpec testing suite on a critical business logic parts of the application from the ground up. Our project team doubled the unique visitors bandwidth (from 30\,000 up to 55\,000--60\,000).
+}
+
+
+\cventry
+{09.2010--02.2011}
+{Assistant}
+{
+  Moscow~Aviation~Institute (National~Research~University) (MAI~(NRU)) \underline{\href{http://mai.ru}{\itshape mai.ru}}
+}
+{Russia,~Moscow}
+{}
+{
+  I was reponsible for conduction of practical seminars: ``Oracle PL/SQL'', ``Expert Systems'', ``Object-oriented programming''.
+}
+
+
+\cventry
+{11.2009--09.2010}
+{Lead Developer}
+{Online shop \underline{\href{http://barboske.ru}{\itshape Barboske}}~(pet~goods)}
+{Russia,~Moscow}
+{}
+{
+  I was a sole developer of the sucessful e-commerce site. It was developed on Ruby on Rails framework. Later it was used as a basis of my diploma thesis.
+}
+
+
+\cventry
+{04.2008--08.2009}
+{Web Developer, Lead Supporting Developer}
+{
+  AIST~LLC. \underline{\href{http://aist.ru}{\itshape aist.ru}} (web~integration, web~development, developer of popular CMS~NetCat)
+}
+{Russia,~Moscow}
+{}
+{}
+
+
+\cventry
+{01.2008--04.2008}
+{Web Developer}
+{
+  SEG MADI (student engineering group of Moscow Automobile and Road Construction State Technical University (MADI)), \underline{\href{http://madi.ru}{\itshape madi.ru}}
+}
+{Russia,~Moscow}
+{}
+{}
+
+
+\cventry
+{10.2007--11.2011}
+{Freelance Web-development}{}{}{}{}
+
+
+\cventry
+{07.2006--01.2009}
+{Web Developer, Content Manager}
+{
+  Formula Hybrid (student engineering group of Moscow Automobile and Road Construction State Technical University (MADI)), \underline{\href{http://madi.ru}{\itshape madi.ru}}
+}
+{Russia,~Moscow}
+{}
+{}
+
+
+\cventry
+{05.2006--09.2006}
+{Specialist,~Department~of~Earth remote sensing}
+{
+  Geo-Alliance~\underline{\href{http://geo-alliance.ru}{\itshape geo-alliance.ru}}~(Earth remote sensing, GIS, cartography)
+}
+{Russia,~Moscow}
+{}
+{}
+
+
+\cventry
+{05.2005--07.2005}
+{Content Manager, Community Manager}
+{Fantasy~World~LLC. \underline{\href{http://fantasy-world.ru}{\itshape fantasy-world.ru}} (collectable~card~games~production)}
+{Russia,~Moscow}
+{}
+{}
+\end{document}
