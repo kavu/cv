@@ -12,14 +12,14 @@ PHOTO        = photo.jpg
 LATEXMK  = -gg -silent -pdf -bibtex
 PDFLATEX = -halt-on-error -file-line-error -recorder -interaction=errorstopmode -synctex=1
 
-NAME = cv
+TARGETS = cv.pdf resume.pdf
 
 # couldn't fix the `references itself (eventually)' warning
 TEXINPUTS = .:$(STYLES_PATH):$(CLASSES_PATH):$$TEXINPUTS
 
 .PHONY: all
 
-all: $(NAME).pdf
+all: $(TARGETS)
 
 clean:
 	-rm *.aux *.fls *.fdb_latexmk *.log *.out *.synctex.gz *.pdf
@@ -27,7 +27,4 @@ clean:
 *.tex: $(CLASSES) $(STYLES) $(BIBS) $(PHOTO)
 
 %.pdf: %.tex
-	# sed -e "s/MY_PHONE/$$PHONE/" $< > $(NAME)-processed.tex
 	TEXINPUTS=$(TEXINPUTS) latexmk $(LATEXMK) -pdflatex='pdflatex $(PDFLATEX) %S %O' $<
-	# -rm $(NAME)-processed.tex
-	# -mv $(NAME){-processed,}.pdf
